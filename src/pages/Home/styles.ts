@@ -16,5 +16,4 @@ export const Banner = styled.div`
 export const Title = styled.h1`
   font-size: 3rem;
   color: #FFF;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 `;

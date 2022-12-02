@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import { Banner, Title } from './styles';
 import { Navbar } from '../../components/Navbar';
-import { ThemeProvider } from 'styled-components';
+import { SupportButton } from '../../components/SupportButton';
 
+import { ThemeProvider } from 'styled-components';
 import lightTheme from '../../themes/light';
 import darkTheme from '../../themes/dark';
 
@@ -16,6 +17,7 @@ export const Home = () => {
       <Banner>
         <Title>Welcome back, Filipi</Title>
       </Banner>
+      <SupportButton />
     </ThemeProvider>
   )
 }

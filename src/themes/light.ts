@@ -7,6 +7,9 @@ const lightTheme = {
       backgroundColor: '#FFF',
       borderColor: '#EEEEEE',
 
+      buttonBackground: '#F6BA04',
+      buttonTextColor: '#614C0E',
+
       iconsColor: '#228891',
     },
   };
