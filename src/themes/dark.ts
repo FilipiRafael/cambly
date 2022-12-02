@@ -4,7 +4,7 @@ const darkTheme = {
       normalText: '#CCC',
       boldText: '#FFF',
       
-      backgroundColor: '#535353',
+      backgroundColor: '#656565',
       borderColor: '#2CD2E1',
 
       iconsColor: '#2CD2E1',
