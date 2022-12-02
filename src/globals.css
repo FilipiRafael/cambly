@@ -1,0 +1,21 @@
+:root {
+  --light-text-color: #3D3D3D;
+  --dark-text-color: #F1F2F4;
+  
+  --light-background-color: #FFF;
+  ---dark-background-color: #0C151D;
+
+  --light-icons-color: #228891;
+  --dark-icons-color: #2CD2E1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #228891;
+}
