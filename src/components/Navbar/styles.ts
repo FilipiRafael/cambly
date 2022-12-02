@@ -28,7 +28,8 @@ export const Wrapper = styled.div`
 `;
 
 export const Brand = styled.img`
-  width: 130px;
+  width: 140px;
+  margin-right: 1rem;
 `;
 
 export const Menu = styled.div`

@@ -1,20 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
-:root {
-  --light-text-bold-color: #3D3D3D;
-  --light-text-color: #717171;
-  --dark-text-color: #cccfd5;
-  
-  --light-background-color: #FFF;
-  ---dark-background-color: #0C151D;
-
-  --light-border-nav-color: #EEEEEE;
-  --dark-border-nav-color: #2CD2E1;
-
-  --light-icons-color: #228891;
-  --dark-icons-color: #2CD2E1;
-}
-
 * {
   margin: 0;
   padding: 0;

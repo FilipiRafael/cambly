@@ -30,10 +30,10 @@ export const Navbar = ({ isDarkTheme = false, changeTheme }: NavBarProps) => {
       </Wrapper>
       <Wrapper>
         {isDarkTheme ? 
-        <NavDarkModeIcon
+        <NavLightModeIcon
           onClick={() => changeTheme(!isDarkTheme)}
         /> 
-        : <NavLightModeIcon
+        : <NavDarkModeIcon
           onClick={() => changeTheme(!isDarkTheme)}
         />}
         <NavMessageIcon />
