@@ -12,11 +12,11 @@ import NightlightIcon from '@mui/icons-material/Nightlight';
 export const Container = styled.nav`
   width: 100vw;
   height: 75px;
-  background-color: var(--light-background-color);
+  background-color: ${props => props.theme.colors.backgroundColor};
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 6px solid var(--light-border-nav-color);
+  border-bottom: 6px solid ${props => props.theme.colors.borderColor};
   padding: 0 2rem;
 `;
 
@@ -32,12 +32,12 @@ export const Brand = styled.img`
 `;
 
 export const Menu = styled.div`
-  color: var(--light-text-color);
+  color: ${props => props.theme.colors.normalText};
   display: flex;
   gap: 1.8rem;
 
   span {
-    color: var(--light-text-color);
+    color: ${props => props.theme.colors.normalText};
     text-transform: uppercase;
     font-size: 0.90rem;
     cursor: pointer;
@@ -49,49 +49,49 @@ export const UserAvatar = styled(Avatar)`
 `;
 
 export const NavHelpIcon = styled(HelpIcon)`
-  color: var(--light-text-color);
+  color: ${props => props.theme.colors.iconsColor};
   cursor: pointer;
   &:hover {
-    color: var(--light-text-bold-color);
+    color: ${props => props.theme.colors.boldText};
   }
 `;
 
 export const NavSchedulerIcon = styled(TodayIcon)`
-  color: var(--light-text-color);
+  color: ${props => props.theme.colors.iconsColor};
   cursor: pointer;
   &:hover {
-    color: var(--light-text-bold-color);
+    color: ${props => props.theme.colors.boldText};
   }
 `;
 
 export const NavNotifyIcon = styled(NotificationsNoneIcon)`
-  color: var(--light-text-color);
+  color: ${props => props.theme.colors.iconsColor};
   cursor: pointer;
   &:hover {
-    color: var(--light-text-bold-color);
+    color: ${props => props.theme.colors.boldText};
   }
 `;
 
 export const NavMessageIcon = styled(MessageIcon)`
-  color: var(--light-text-color);
+  color: ${props => props.theme.colors.iconsColor};
   cursor: pointer;
   &:hover {
-    color: var(--light-text-bold-color);
+    color: ${props => props.theme.colors.boldText};
   }
 `;
 
 export const NavLightModeIcon = styled(LightModeIcon)`
-  color: var(--light-text-color);
+  color: ${props => props.theme.colors.iconsColor};
   cursor: pointer;
   &:hover {
-    color: var(--light-text-bold-color);
+    color: ${props => props.theme.colors.boldText};
   }
 `;
 
 export const NavDarkModeIcon = styled(NightlightIcon)`
-  color: var(--light-text-color);
+  color: ${props => props.theme.colors.iconsColor};
   cursor: pointer;
   &:hover {
-    color: var(--light-text-bold-color);
+    color: ${props => props.theme.colors.boldText};
   }
 `;
