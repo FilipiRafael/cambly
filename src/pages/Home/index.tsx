@@ -1,7 +1,9 @@
-import { Banner } from './styles';
+import { Banner, Title } from './styles';
 
 export const Home = () => {
   return (
-    <Banner />
+    <Banner>
+      <Title>Welcome back, Filipi</Title>
+    </Banner>
   )
 }

@@ -7,4 +7,14 @@ export const Banner = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+`;
+
+export const Title = styled.h1`
+  font-size: 3rem;
+  color: #FFF;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 `;
