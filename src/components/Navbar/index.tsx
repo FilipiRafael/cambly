@@ -1,6 +1,23 @@
-import { Container, Brand, Menu, Wrapper } from './styles';
+import { 
+  Container,
+  Brand,
+  Menu,
+  Wrapper,
+  UserAvatar,
+  NavHelpIcon,
+  NavSchedulerIcon,
+  NavNotifyIcon,
+  NavMessageIcon,
+  NavDarkModeIcon,
+  NavLightModeIcon
+} from './styles';
 
-export const Navbar = () => {
+interface NavBarProps {
+  isDarkTheme: boolean;
+  changeTheme: (theme: boolean) => void;
+}
+
+export const Navbar = ({ isDarkTheme = false, changeTheme }: NavBarProps) => {
   return (
     <Container>
       <Wrapper>
@@ -10,6 +27,20 @@ export const Navbar = () => {
           <span>Currículos</span>
           <span>Progresso</span>
         </Menu>
+      </Wrapper>
+      <Wrapper>
+        {isDarkTheme ? 
+        <NavDarkModeIcon
+          onClick={() => changeTheme(!isDarkTheme)}
+        /> 
+        : <NavLightModeIcon
+          onClick={() => changeTheme(!isDarkTheme)}
+        />}
+        <NavMessageIcon />
+        <NavNotifyIcon />
+        <NavSchedulerIcon />
+        <NavHelpIcon />
+        <UserAvatar src="https://github.com/FilipiRafael.png" alt="User Avatar" />
       </Wrapper>
     </Container>
   )
