@@ -4,12 +4,22 @@ export const Card = styled.div`
   width: 350px;
   height: 220px;
 
+  cursor: pointer;
+
   background-color: ${props => props.theme.colors.backgroundColor};
   padding: 1rem;
+
+  position: relative;
 
   border: 1px solid ${props => props.theme.colors.cardBorderColor};
   border-radius: 0.5rem;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+`;
+
+export const FavoriteWrapper = styled.div`
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
 `;
 
 export const AvatarWrapper = styled.div`

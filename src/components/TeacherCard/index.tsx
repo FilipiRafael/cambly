@@ -2,8 +2,11 @@ import {
   Card,
   Avatar,
   AvatarWrapper,
-  OnlineIcon
+  OnlineIcon,
+  FavoriteWrapper,
 } from './styles';
+
+import { FavoriteButton } from '../../components/FavoriteButton';
 
 interface TeacherCardProps {
   name: string;
@@ -26,6 +29,9 @@ export const TeacherCard = ({
 }: TeacherCardProps) => {
   return (
     <Card>
+      <FavoriteWrapper>
+        <FavoriteButton favorited={favorite} />
+      </FavoriteWrapper>
       <AvatarWrapper>
         <Avatar src={photo} alt='Teacher avatar' />
         {online && <OnlineIcon />}
@@ -34,7 +40,6 @@ export const TeacherCard = ({
       <span>{note}</span>
       <span>{country}</span>
       <span>{about}</span>
-      <span>{favorite}</span>
       <span>{online}</span>
     </Card>
   )
