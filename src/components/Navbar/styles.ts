@@ -45,6 +45,7 @@ export const Menu = styled.div`
     color: ${props => props.theme.colors.normalText};
     text-transform: uppercase;
     font-size: 0.90rem;
+    line-height: 0;
     cursor: pointer;
 
     @media screen and (max-width: 570px) {

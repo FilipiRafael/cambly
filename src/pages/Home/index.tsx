@@ -1,5 +1,13 @@
 import { useState } from 'react';
-import { Banner, Title } from './styles';
+import { 
+  Banner,
+  Title,
+  Wrapper,
+  Subtitle,
+  Container,
+  OnlineTag,
+  FavoritesTag
+} from './styles';
 import { Navbar } from '../../components/Navbar';
 import { SupportButton } from '../../components/SupportButton';
 
@@ -17,6 +25,18 @@ export const Home = () => {
       <Banner>
         <Title>Welcome back, Filipi</Title>
       </Banner>
+
+      <Container>
+        <Wrapper>
+          <Subtitle>Encontre um professor</Subtitle>
+          <OnlineTag>On-line</OnlineTag>
+          <FavoritesTag>Favoritos</FavoritesTag>
+        </Wrapper>
+        <Wrapper>
+          <FavoritesTag>Favoritos</FavoritesTag>
+        </Wrapper>
+      </Container>
+
       <SupportButton />
     </ThemeProvider>
   )

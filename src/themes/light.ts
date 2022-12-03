@@ -3,6 +3,7 @@ const lightTheme = {
     colors: {
       normalText: '#717171',
       boldText: '#3D3D3D',
+      boldTextColored: '#228891',
       
       backgroundColor: '#FFF',
       borderColor: '#EEEEEE',

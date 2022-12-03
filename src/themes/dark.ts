@@ -3,6 +3,7 @@ const darkTheme = {
     colors: {
       normalText: '#CCC',
       boldText: '#FFF',
+      boldTextColored: '#2CD2E1',
       
       backgroundColor: '#656565',
       borderColor: '#2CD2E1',
