@@ -8,7 +8,7 @@ export const Button = styled.button`
   border-radius: 2rem;
   cursor: pointer;
 
-  position: absolute;
+  position: sticky;
   bottom: 1rem;
   left: 1rem;
 
