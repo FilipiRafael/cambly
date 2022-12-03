@@ -11,7 +11,8 @@ import {
   SearchIconField,
   InputField,
   FlexWrapper,
-  TagsWrapper
+  TagsWrapper,
+  DisponibilityTitle
 } from './styles';
 
 import { Navbar } from '../../components/Navbar';
@@ -57,7 +58,12 @@ export const Home = () => {
           <Tag text='Personalidade' />
           <Tag text='Disponibilidade' />
         </TagsWrapper>
+      </Container>
 
+      <Container>
+        <Wrapper>
+            <DisponibilityTitle>Professores disponíveis</DisponibilityTitle>
+        </Wrapper>
       </Container>
 
       <SupportButton />

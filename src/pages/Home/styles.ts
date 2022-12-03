@@ -41,8 +41,6 @@ export const FlexWrapper = styled.div`
 export const Wrapper = styled.div`
   height: 50px;
 
-  margin-bottom: 0.5rem;
-
   display: flex;
   align-items: center;
   gap: 1.5rem;
@@ -109,4 +107,10 @@ export const InputField = styled.input`
 export const SearchIconField = styled(SearchIcon)`
   color: ${props => props.theme.colors.placeholderText};
   margin-right: 0.5rem;
+`;
+
+export const DisponibilityTitle = styled.h3`
+  color: ${props => props.theme.colors.normalText};
+  text-transform: uppercase;
+  font-weight: 400;
 `;
