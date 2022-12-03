@@ -18,10 +18,13 @@ import {
 import { Navbar } from '../../components/Navbar';
 import { SupportButton } from '../../components/SupportButton';
 import { Tag } from '../../components/Tag'; 
+import { TeacherCard } from '../../components/TeacherCard';
 
 import { ThemeProvider } from 'styled-components';
 import lightTheme from '../../themes/light';
 import darkTheme from '../../themes/dark';
+
+import teacherList from '../../mocks/teachers.json';
 
 export const Home = () => {
 
@@ -64,6 +67,19 @@ export const Home = () => {
         <Wrapper>
             <DisponibilityTitle>Professores disponíveis</DisponibilityTitle>
         </Wrapper>
+
+        {teacherList.map((teacher) => (
+          <TeacherCard
+            key={teacher.id}
+            name={teacher.name}
+            note={teacher.note}
+            photo={teacher.photo}
+            about={teacher.about}
+            country={teacher.country}
+            favorite={teacher.favorite}
+            online={teacher.online}
+          />
+        ))}
       </Container>
 
       <SupportButton />
