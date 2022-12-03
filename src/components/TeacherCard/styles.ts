@@ -4,6 +4,12 @@ interface ActionButtonProps {
   primary: boolean;
 }
 
+export const Avatar = styled.img`
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+`;
+
 export const ActionButton = styled.button<ActionButtonProps>`
   font-size: 0.7rem;
   text-transform: uppercase;
@@ -56,6 +62,10 @@ export const Card = styled.div`
     transform: translateY(15px);
     opacity: 1;
   }
+
+  &:hover ${Avatar} {
+    border-top-left-radius: 2rem;
+  }
 `;
 
 export const ButtonWrapper = styled.div`
@@ -95,12 +105,6 @@ export const AvatarWrapper = styled.div`
   height: 80px;
 
   position: relative;
-`;
-
-export const Avatar = styled.img`
-  width: 100%;
-  height: 100%;
-  border-radius: 0.5rem;
 `;
 
 export const OnlineIcon = styled.div`
