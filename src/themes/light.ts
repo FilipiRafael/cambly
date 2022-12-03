@@ -9,6 +9,7 @@ const lightTheme = {
       
       backgroundColor: '#FFF',
       borderColor: '#EEEEEE',
+      cardBorderColor: '#DDDDDD',
 
       buttonBackground: '#F6BA04',
       buttonBackgroundOnHover: '#F6F6F6',

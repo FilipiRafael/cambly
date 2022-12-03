@@ -9,6 +9,7 @@ const darkTheme = {
       
       backgroundColor: '#656565',
       borderColor: '#2CD2E1',
+      cardBorderColor: '#2CD2E1',
 
       buttonBackground: '#2CD2E1',
       buttonBackgroundOnHover: '#2CD2E1',

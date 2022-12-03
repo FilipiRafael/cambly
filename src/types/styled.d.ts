@@ -11,6 +11,7 @@ declare module 'styled-components' {
       boldTextColored: string;
       backgroundColor: string;
       borderColor: string;
+      cardBorderColor: string;
       iconsColor: string;
       buttonBackground: string;
       buttonBackgroundOnHover: string;
