@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Banner = styled.div`
   width: 100vw;
-  height: 370px;
+  height: 390px;
   background-image: url('/images/yellow-banner.svg');
   background-position: center;
   background-repeat: no-repeat;

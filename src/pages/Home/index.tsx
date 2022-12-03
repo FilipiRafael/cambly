@@ -20,7 +20,7 @@ export const Home = () => {
   const [isDarkTheme, setIsDarkTheme] = useState<boolean>(false);
 
   return (
-    <ThemeProvider theme={isDarkTheme ? lightTheme : darkTheme}>
+    <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
       <Navbar isDarkTheme={isDarkTheme} changeTheme={setIsDarkTheme} />
       <Banner>
         <Title>Welcome back, Filipi</Title>
