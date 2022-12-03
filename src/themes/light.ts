@@ -2,6 +2,7 @@ const lightTheme = {
     name: 'light',
     colors: {
       normalText: '#717171',
+      placeholderText: '#ACACAC',
       boldText: '#3D3D3D',
       boldTextColored: '#228891',
       

@@ -6,7 +6,10 @@ import {
   Subtitle,
   Container,
   OnlineTag,
-  FavoritesTag
+  FavoritesTag,
+  SearchField,
+  SearchIconField,
+  InputField
 } from './styles';
 import { Navbar } from '../../components/Navbar';
 import { SupportButton } from '../../components/SupportButton';
@@ -33,7 +36,12 @@ export const Home = () => {
           <FavoritesTag>Favoritos</FavoritesTag>
         </Wrapper>
         <Wrapper>
-          <FavoritesTag>Favoritos</FavoritesTag>
+          <SearchField>
+            <SearchIconField />
+            <InputField
+              placeholder='Nome, idioma, hobby'
+            />
+          </SearchField>
         </Wrapper>
       </Container>
 

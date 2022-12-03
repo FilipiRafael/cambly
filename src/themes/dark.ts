@@ -2,6 +2,7 @@ const darkTheme = {
     name: 'light',
     colors: {
       normalText: '#CCC',
+      placeholderText: '#ACACAC',
       boldText: '#FFF',
       boldTextColored: '#2CD2E1',
       
