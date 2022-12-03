@@ -72,9 +72,9 @@ export const Home = () => {
           <TeacherCard
             key={teacher.id}
             name={teacher.name}
-            note={teacher.note}
             photo={teacher.photo}
             about={teacher.about}
+            flag={teacher.flag}
             country={teacher.country}
             favorite={teacher.favorite}
             online={teacher.online}

@@ -3,15 +3,22 @@ import {
   Avatar,
   AvatarWrapper,
   OnlineIcon,
+  FlexWrapper,
   FavoriteWrapper,
+  BioWrapper,
+  InfoWrapper,
+  TeacherName,
+  TeacherCountry,
+  TeacherFlag,
+  TeacherAbout
 } from './styles';
 
 import { FavoriteButton } from '../../components/FavoriteButton';
 
 interface TeacherCardProps {
   name: string;
-  note: number;
   country: string;
+  flag: string;
   photo: string;
   about: string;
   favorite: boolean;
@@ -20,8 +27,8 @@ interface TeacherCardProps {
 
 export const TeacherCard = ({
   name,
-  note,
   country,
+  flag,
   photo,
   about,
   favorite,
@@ -32,15 +39,20 @@ export const TeacherCard = ({
       <FavoriteWrapper>
         <FavoriteButton favorited={favorite} />
       </FavoriteWrapper>
-      <AvatarWrapper>
-        <Avatar src={photo} alt='Teacher avatar' />
-        {online && <OnlineIcon />}
-      </AvatarWrapper>
-      <span>{name}</span>
-      <span>{note}</span>
-      <span>{country}</span>
-      <span>{about}</span>
-      <span>{online}</span>
+      <BioWrapper>
+        <AvatarWrapper>
+          <Avatar src={photo} alt='Teacher avatar' />
+          {online && <OnlineIcon />}
+        </AvatarWrapper>
+        <InfoWrapper>
+          <TeacherName>{name}</TeacherName>
+          <FlexWrapper>
+            <TeacherFlag src={flag} alt='Country Flag' />
+            <TeacherCountry>{country}</TeacherCountry>
+          </FlexWrapper>
+        </InfoWrapper>
+      </BioWrapper>
+      <TeacherAbout>{about}</TeacherAbout>
     </Card>
   )
 }
