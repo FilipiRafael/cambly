@@ -1,4 +1,9 @@
-import { Card } from './styles';
+import { 
+  Card,
+  Avatar,
+  AvatarWrapper,
+  OnlineIcon
+} from './styles';
 
 interface TeacherCardProps {
   name: string;
@@ -21,10 +26,13 @@ export const TeacherCard = ({
 }: TeacherCardProps) => {
   return (
     <Card>
+      <AvatarWrapper>
+        <Avatar src={photo} alt='Teacher avatar' />
+        {online && <OnlineIcon />}
+      </AvatarWrapper>
       <span>{name}</span>
       <span>{note}</span>
       <span>{country}</span>
-      <span>{photo}</span>
       <span>{about}</span>
       <span>{favorite}</span>
       <span>{online}</span>
