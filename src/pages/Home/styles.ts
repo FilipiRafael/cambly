@@ -22,22 +22,38 @@ export const Title = styled.h1`
 
 export const Container = styled.main`
   width: 100vw;
-  padding: 1.5rem 4rem;
+  padding: 1.5rem 6rem;
   background-color: ${props => props.theme.colors.backgroundColor};
 
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+`;
+
+export const FlexWrapper = styled.div`
+  display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 `;
 
 export const Wrapper = styled.div`
-  width: 100%;
+  height: 50px;
+
+  margin-bottom: 0.5rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+`;
+
+export const TagsWrapper = styled.div`
   height: 50px;
 
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 1.2rem;
+  gap: 0.5rem;
 `;
 
 export const Subtitle = styled.h2`
@@ -80,6 +96,10 @@ export const SearchField = styled.div`
 `;
 
 export const InputField = styled.input`
+  background-color: transparent;
+
+  color: ${props => props.theme.colors.placeholderText};
+
   &::placeholder {
     color: ${props => props.theme.colors.placeholderText};
     font-weight: 400;

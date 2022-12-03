@@ -9,10 +9,14 @@ import {
   FavoritesTag,
   SearchField,
   SearchIconField,
-  InputField
+  InputField,
+  FlexWrapper,
+  TagsWrapper
 } from './styles';
+
 import { Navbar } from '../../components/Navbar';
 import { SupportButton } from '../../components/SupportButton';
+import { Tag } from '../../components/Tag'; 
 
 import { ThemeProvider } from 'styled-components';
 import lightTheme from '../../themes/light';
@@ -30,19 +34,30 @@ export const Home = () => {
       </Banner>
 
       <Container>
-        <Wrapper>
-          <Subtitle>Encontre um professor</Subtitle>
-          <OnlineTag>On-line</OnlineTag>
-          <FavoritesTag>Favoritos</FavoritesTag>
-        </Wrapper>
-        <Wrapper>
-          <SearchField>
-            <SearchIconField />
-            <InputField
-              placeholder='Nome, idioma, hobby'
-            />
-          </SearchField>
-        </Wrapper>
+        <FlexWrapper>
+          <Wrapper>
+            <Subtitle>Encontre um professor</Subtitle>
+            <OnlineTag>On-line</OnlineTag>
+            <FavoritesTag>Favoritos</FavoritesTag>
+          </Wrapper>
+          <Wrapper>
+            <SearchField>
+              <SearchIconField />
+              <InputField
+                placeholder='Nome, idioma, hobby'
+              />
+            </SearchField>
+          </Wrapper>
+        </FlexWrapper>
+
+        <TagsWrapper>
+          <Tag text='Escolha o currículo' />
+          <Tag text='Nível de aula' />
+          <Tag text='Sotaque' />
+          <Tag text='Personalidade' />
+          <Tag text='Disponibilidade' />
+        </TagsWrapper>
+
       </Container>
 
       <SupportButton />

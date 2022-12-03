@@ -5,6 +5,7 @@ declare module 'styled-components' {
     name: string;
     colors: {
       normalText: string;
+      hoverText: string;
       placeholderText: string;
       boldText?: string;
       boldTextColored: string;
@@ -12,6 +13,7 @@ declare module 'styled-components' {
       borderColor: string;
       iconsColor: string;
       buttonBackground: string;
+      buttonBackgroundOnHover: string;
       buttonTextColor: string;
     },
   }

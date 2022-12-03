@@ -2,7 +2,8 @@ const darkTheme = {
     name: 'light',
     colors: {
       normalText: '#CCC',
-      placeholderText: '#ACACAC',
+      hoverText: '#FFF',
+      placeholderText: '#CCC',
       boldText: '#FFF',
       boldTextColored: '#2CD2E1',
       
@@ -10,6 +11,7 @@ const darkTheme = {
       borderColor: '#2CD2E1',
 
       buttonBackground: '#2CD2E1',
+      buttonBackgroundOnHover: '#2CD2E1',
       buttonTextColor: '#FFF',
 
       iconsColor: '#2CD2E1',
