@@ -17,14 +17,11 @@ import {
 
 import { FavoriteButton } from '../../components/FavoriteButton';
 
-interface TeacherCardProps {
-  name: string;
-  country: string;
-  flag: string;
-  photo: string;
-  about: string;
-  favorite: boolean;
-  online: boolean;
+import { TeacherListProps } from '../../types/shared';
+
+interface TeacherCardProps extends TeacherListProps {
+  // updateList: (list: TeacherListProps[]) => void;
+  // list: TeacherListProps[];
 }
 
 export const TeacherCard = ({
@@ -34,12 +31,14 @@ export const TeacherCard = ({
   photo,
   about,
   favorite,
-  online 
+  online,
 }: TeacherCardProps) => {
   return (
     <Card>
       <FavoriteWrapper>
-        <FavoriteButton favorited={favorite} />
+        <FavoriteButton
+          favorited={favorite}
+        />
       </FavoriteWrapper>
       <BioWrapper>
         <AvatarWrapper>

@@ -24,10 +24,13 @@ import { ThemeProvider } from 'styled-components';
 import lightTheme from '../../themes/light';
 import darkTheme from '../../themes/dark';
 
-import teacherList from '../../mocks/teachers.json';
+import teacherListApi from '../../mocks/teachers.json';
+
+import { TeacherListProps } from '../../types/shared';
 
 export const Home = () => {
 
+  const [teacherList] = useState<TeacherListProps[]>(teacherListApi);
   const [isDarkTheme, setIsDarkTheme] = useState<boolean>(false);
 
   return (
@@ -71,6 +74,7 @@ export const Home = () => {
         {teacherList.map((teacher) => (
           <TeacherCard
             key={teacher.id}
+            id={teacher.id}
             name={teacher.name}
             photo={teacher.photo}
             about={teacher.about}

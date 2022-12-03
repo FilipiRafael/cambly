@@ -5,7 +5,10 @@ export interface FavoriteButtonProps {
 }
 
 export const FavoriteButton = ({ favorited }: FavoriteButtonProps) => {
+
  return (
-  <Button favorited={favorited} />
+  <Button
+    favorited={favorited}
+  />
  ) 
 }
