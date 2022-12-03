@@ -10,7 +10,9 @@ import {
   TeacherName,
   TeacherCountry,
   TeacherFlag,
-  TeacherAbout
+  TeacherAbout,
+  ActionButton,
+  ButtonWrapper
 } from './styles';
 
 import { FavoriteButton } from '../../components/FavoriteButton';
@@ -53,6 +55,10 @@ export const TeacherCard = ({
         </InfoWrapper>
       </BioWrapper>
       <TeacherAbout>{about}</TeacherAbout>
+      <ButtonWrapper>
+        <ActionButton primary={false}>Perfil</ActionButton>
+        <ActionButton primary={true}>Ligar</ActionButton>
+      </ButtonWrapper>
     </Card>
   )
 }

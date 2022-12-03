@@ -1,13 +1,43 @@
 import styled from 'styled-components';
 
+interface ActionButtonProps {
+  primary: boolean;
+}
+
+export const ActionButton = styled.button<ActionButtonProps>`
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: 400;
+
+  cursor: pointer;
+
+  padding: 0.5rem 1.2rem;
+  margin-right: 0.5rem;
+
+  border-radius: 0.2rem;
+
+  color: ${props => 
+    props.primary ? 
+      props.theme.colors.boldText : '#3D3D3D'
+  };
+  
+  background-color: ${props => 
+    props.primary ? 
+      props.theme.colors.buttonBackground : '#DDDDDD'
+  };
+
+  transform: translateY(50px);
+  opacity: 0;
+`;
+
 export const Card = styled.div`
   width: 350px;
-  height: 250px;
+  height: 220px;
 
   cursor: pointer;
 
   background-color: ${props => props.theme.colors.backgroundColor};
-  padding: 1rem;
+  padding: 0.8rem;
 
   position: relative;
 
@@ -18,7 +48,21 @@ export const Card = styled.div`
   &:hover {
     border-top-left-radius: 2.5rem;
     border-bottom-right-radius: 2.5rem;
+
+    border: 1px solid ${props => props.theme.colors.buttonBackground};
   }
+
+  &:hover ${ActionButton} {
+    transform: translateY(15px);
+    opacity: 1;
+  }
+`;
+
+export const ButtonWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 `;
 
 export const FlexWrapper = styled.div`
@@ -66,7 +110,7 @@ export const OnlineIcon = styled.div`
   background-color: #96C45E;
   border-radius: 0.15rem;
 
-  border: 2px solid #FFF;
+  border: 2px solid transparent;
   
   position: absolute;
   left: -4px;
@@ -98,5 +142,5 @@ export const TeacherAbout = styled.p`
   font-weight: 300;
   color: ${props => props.theme.colors.normalText};
 
-  margin-top: 1rem;
+  margin: 1rem 0;
 `;
