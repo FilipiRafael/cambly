@@ -12,7 +12,8 @@ import {
   InputField,
   FlexWrapper,
   TagsWrapper,
-  DisponibilityTitle
+  DisponibilityTitle,
+  TeachersList
 } from './styles';
 
 import { Navbar } from '../../components/Navbar';
@@ -26,11 +27,11 @@ import darkTheme from '../../themes/dark';
 
 import teacherListApi from '../../mocks/teachers.json';
 
-import { TeacherListProps } from '../../types/shared';
+import { ITeacherListProps } from '../../types/shared';
 
 export const Home = () => {
 
-  const [teacherList, setTeacherList] = useState<TeacherListProps[]>(teacherListApi);
+  const [teacherList, setTeacherList] = useState<ITeacherListProps[]>(teacherListApi);
   const [isDarkTheme, setIsDarkTheme] = useState<boolean>(false);
 
   const handleUpdateFavoriteList = (id: number) => {
@@ -84,20 +85,22 @@ export const Home = () => {
             <DisponibilityTitle>Professores disponíveis</DisponibilityTitle>
         </Wrapper>
 
-        {teacherList.map((teacher) => (
-          <TeacherCard
-            handleUpdateFavoriteList={handleUpdateFavoriteList}
-            key={teacher.id}
-            id={teacher.id}
-            name={teacher.name}
-            photo={teacher.photo}
-            about={teacher.about}
-            flag={teacher.flag}
-            country={teacher.country}
-            favorite={teacher.favorite}
-            online={teacher.online}
-          />
-        ))}
+        <TeachersList>
+          {teacherList.map((teacher) => (
+            <TeacherCard
+              handleUpdateFavoriteList={handleUpdateFavoriteList}
+              key={teacher.id}
+              id={teacher.id}
+              name={teacher.name}
+              photo={teacher.photo}
+              about={teacher.about}
+              flag={teacher.flag}
+              country={teacher.country}
+              favorite={teacher.favorite}
+              online={teacher.online}
+            />
+          ))}
+        </TeachersList>
       </Container>
 
       <SupportButton />

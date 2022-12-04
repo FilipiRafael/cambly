@@ -1,4 +1,4 @@
-export interface TeacherListProps {
+export interface ITeacherListProps {
   id: number;
   name: string;
   country: string;

@@ -37,7 +37,7 @@ export const ActionButton = styled.button<ActionButtonProps>`
 `;
 
 export const Card = styled.div`
-  width: 350px;
+  width: 400px;
   height: 220px;
 
   cursor: pointer;
@@ -59,7 +59,7 @@ export const Card = styled.div`
   }
 
   &:hover ${ActionButton} {
-    transform: translateY(15px);
+    transform: translateY(25px);
     opacity: 1;
   }
 

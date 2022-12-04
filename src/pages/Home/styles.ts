@@ -31,6 +31,17 @@ export const Container = styled.main`
   align-items: space-between;
 `;
 
+export const TeachersList = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  place-items: center;
+
+  width: 100%;
+
+  row-gap: 2rem;
+  column-gap: 0.5rem;
+`;
+
 export const FlexWrapper = styled.div`
   display: flex;
   justify-content: space-between;

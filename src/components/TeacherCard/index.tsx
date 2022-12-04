@@ -17,9 +17,9 @@ import {
 
 import { FavoriteButton } from '../../components/FavoriteButton';
 
-import { TeacherListProps } from '../../types/shared';
+import { ITeacherListProps } from '../../types/shared';
 
-interface TeacherCardProps extends TeacherListProps {
+interface TeacherCardProps extends ITeacherListProps {
   handleUpdateFavoriteList: (id: number) => void;
 }
 
