@@ -59,7 +59,7 @@ export const Card = styled.div`
   }
 
   &:hover ${ActionButton} {
-    transform: translateY(25px);
+    transform: translateY(10px);
     opacity: 1;
   }
 
@@ -101,8 +101,8 @@ export const InfoWrapper = styled.div`
 `;
 
 export const AvatarWrapper = styled.div`
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
 
   position: relative;
 `;
