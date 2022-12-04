@@ -7,7 +7,7 @@ const darkTheme = {
       boldText: '#FFF',
       boldTextColored: '#2CD2E1',
       
-      backgroundColor: '#656565',
+      backgroundColor: '#191C1E',
       borderColor: '#2CD2E1',
       cardBorderColor: '#2CD2E1',
 
