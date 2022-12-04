@@ -42,7 +42,6 @@ export const Home = () => {
 
     const newList = [...teacherList];
     newList[teacherIndex].favorite = !newList[teacherIndex].favorite
-    newList[teacherIndex].name = 'Atualizado'
 
     setTeacherList(newList);
   }
