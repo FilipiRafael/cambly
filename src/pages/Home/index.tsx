@@ -30,9 +30,22 @@ import { TeacherListProps } from '../../types/shared';
 
 export const Home = () => {
 
-  const [teacherList] = useState<TeacherListProps[]>(teacherListApi);
+  const [teacherList, setTeacherList] = useState<TeacherListProps[]>(teacherListApi);
   const [isDarkTheme, setIsDarkTheme] = useState<boolean>(false);
 
+  const handleUpdateFavoriteList = (id: number) => {
+
+    const teacherIndex = teacherList.findIndex((teacher) => {
+      return teacher.id === id;
+    })
+
+    const newList = [...teacherList];
+    newList[teacherIndex].favorite = !newList[teacherIndex].favorite
+    newList[teacherIndex].name = 'Atualizado'
+
+    setTeacherList(newList);
+  }
+ 
   return (
     <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
       <Navbar isDarkTheme={isDarkTheme} changeTheme={setIsDarkTheme} />
@@ -73,6 +86,7 @@ export const Home = () => {
 
         {teacherList.map((teacher) => (
           <TeacherCard
+            handleUpdateFavoriteList={handleUpdateFavoriteList}
             key={teacher.id}
             id={teacher.id}
             name={teacher.name}

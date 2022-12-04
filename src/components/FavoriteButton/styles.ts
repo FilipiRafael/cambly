@@ -1,7 +1,11 @@
 import styled from 'styled-components';
-import { FavoriteButtonProps } from './index';
 
-export const Button = styled.button<FavoriteButtonProps>`
+interface FavoriteButtonStyled {
+  favorited: boolean;
+  onClick: () => void;
+}
+
+export const Button = styled.button<FavoriteButtonStyled>`
   background-color: ${props => props.favorited ? '#FF6251' : props.theme.colors.placeholderText};
   display: inline-block;
   height: 15px;

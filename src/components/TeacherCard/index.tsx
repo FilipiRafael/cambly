@@ -20,8 +20,7 @@ import { FavoriteButton } from '../../components/FavoriteButton';
 import { TeacherListProps } from '../../types/shared';
 
 interface TeacherCardProps extends TeacherListProps {
-  // updateList: (list: TeacherListProps[]) => void;
-  // list: TeacherListProps[];
+  handleUpdateFavoriteList: (id: number) => void;
 }
 
 export const TeacherCard = ({
@@ -32,12 +31,16 @@ export const TeacherCard = ({
   about,
   favorite,
   online,
+  handleUpdateFavoriteList,
+  id
 }: TeacherCardProps) => {
   return (
     <Card>
       <FavoriteWrapper>
         <FavoriteButton
           favorited={favorite}
+          handleUpdateFavoriteList={handleUpdateFavoriteList}
+          id={id}
         />
       </FavoriteWrapper>
       <BioWrapper>
