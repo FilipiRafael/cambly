@@ -33,7 +33,7 @@ O projeto tem o objetivo final de ser um clone UI do Cambly, mas com um novo des
 | :fire: Desafio     | https://github.com/FilipiRafael/cambly-ui-clone
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
-![](https://raw.githubusercontent.com/FilipiRafael/doing.dev/main/public/screenshots/image5.png#vitrinedev)
+![](https://raw.githubusercontent.com/FilipiRafael/cambly-ui-clone/blob/main/public/images/light-screenshot.png#vitrinedev)
 
 ## Detalhes do projeto
 
